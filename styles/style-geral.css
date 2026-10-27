@@ -1,4 +1,4 @@
-.body{
+.body {
     margin: 0;
     padding: 0;
     margin: 2% 25% 10% 25%;
@@ -13,25 +13,43 @@
     min-width: 1024px;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
 
+#menu-lista {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
 
+.menu-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
 
-
-.titulo{
+.titulo {
     text-align: center;
     font-weight: bold;
     font-size: 2.5em;
     padding: 10px;
 }
 
-.paragrafo{
+.paragrafo {
     text-align: center;
     font-size: 18px;
     padding: 10px;
     margin-bottom: 10%;
 }
 
-.modelos{
+.modelos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -40,15 +58,42 @@
     margin-bottom: 10%;
 }
 
-.descricao{
+.descricao {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-content: center;
     gap: 10px;
-    margin-bottom: 10%; 
+    margin-bottom: 10%;
 }
 
-.text_modelo{
+.text_modelo {
     font-size: 20px;
     text-align: center;
+}
+
+.descricaoduascolunas {
+    background-image: url(../img/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 449px;
+    min-width: 364px;
+}
+
+.descricaoduascolunas h1 {
+    color: white;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 40px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.descricaoduascolunas p {
+    margin-top: 140px;
+    color: white;
+    text-align: justify;
+    font-size: 22px;
+    margin-left: 36px;
+    margin-right: 36px;
 }
